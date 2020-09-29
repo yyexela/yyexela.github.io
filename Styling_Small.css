@@ -1,0 +1,210 @@
+::selection {
+    color: black;
+    background: #99d6ff;
+}
+
+a	{
+	text-decoration: none;
+	color: white;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	color: white;
+	z-index: -3;
+	background-color: #A1A1A1;
+	height: 100%;
+}
+
+.intro{
+	background-color:#2F2F2F;
+	height: 670px;
+	width: 100%;
+	display: inline-block;
+}
+
+
+#name {
+	font-family: 'Dosis', sans-serif;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 100px;
+	display: block;
+}
+
+#faceshot {
+	display: block;
+	height: 240px;
+	width: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+#nameSub {
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: -75px;
+	cursor: pointer;
+}
+
+.background {
+	background-color: #A1A1A1;
+	width: 100%;
+}
+
+.wrap{
+	background-color: white;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: inline-block;
+}
+
+.wrap2 {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	display: inline-block;
+	color: black;
+	background-color: white;
+}
+
+.topOffset{
+	background-color: #666666;
+	height: 50px;  
+	width: 100%;
+	display: block;
+}
+
+.divider {
+	background-color: #666666;
+	height: 30px;  
+	width: 100%;
+	display: block;
+}
+
+.split{
+	height: 1px;
+	background-color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 80%;
+	margin-left:10%;
+}
+
+.header {
+	font-size: 36px;
+	display: block;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.subHeader {
+	font-size: 32px;
+	display: block;
+	font-family: 'Dosis', sans-serif;
+}
+
+.body {
+	display: block;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+
+.bodyImage {
+	border-radius: 2px;
+	border:1px solid black;
+	height: auto;
+}
+
+.artImage {
+	width: 20%;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.resizedImage{
+	display: block ;
+	max-height: 80%;
+	max-width: 80%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	cursor: pointer;
+}
+
+.footer {
+	display: inline-block;
+	margin-top: 14px; 
+	margin-left: 2.5%; 
+	margin-right: 2.5%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.navText{
+	font-size: 20px;
+	margin-left: 2.5%; 
+	margin-right: 2.5%;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+}
+
+.fa-mobile{
+	color: white;
+}
+
+.fa-instagram{
+	color: white;
+}
+
+.fa-envelope-o{
+	color: white;
+}
+
+.navBar{
+	display: fixed;
+	background-color: #666666;
+	color: black;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+}
+
+.forefront{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.highlight{
+	    box-shadow:0px 12px 22px 1px #333;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.grid-col-one{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.grid-col-two{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
