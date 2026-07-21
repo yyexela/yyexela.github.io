@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Site flourishes: ambient background drift + easter eggs
+   Site flourishes: ambient background drift + corner pet + easter eggs
    ========================================================================== */
 
 html {
@@ -88,6 +88,166 @@ html[data-theme="dark"] #bg-drift span {
 @media (max-width: 600px) {
   #bg-drift {
     display: none;
+  }
+}
+
+/* ---------- corner pet ---------- */
+
+#site-pet {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 500;
+}
+
+.site-pet-walker {
+  position: relative;
+  animation: site-pet-pace 7s ease-in-out infinite alternate;
+}
+
+@keyframes site-pet-pace {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-46px); }
+}
+
+.site-pet-walker.is-asleep {
+  animation-play-state: paused;
+}
+
+.site-pet-shadow {
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 30px;
+  height: 7px;
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+  filter: blur(2px);
+  transform: translateX(-50%);
+}
+
+.site-pet-zzz {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: monospace;
+  color: var(--global-text-color, #333);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  animation: site-pet-zzz-float 2.4s ease-in-out infinite;
+}
+
+.site-pet-zzz.is-visible {
+  opacity: 0.7;
+}
+
+@keyframes site-pet-zzz-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+.site-pet-sprite {
+  position: relative;
+  appearance: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  display: block;
+  animation: site-pet-bob 0.6s ease-in-out infinite;
+}
+
+@keyframes site-pet-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-2px); }
+}
+
+.site-pet-sprite.is-asleep {
+  animation-play-state: paused;
+}
+
+.site-pet-grid {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(17, 1fr);
+  width: 56px;
+  height: 68px;
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.12));
+  transition: transform 0.15s ease;
+}
+
+.site-pet-grid.is-flipped {
+  transform: scaleX(-1);
+}
+
+.site-pet-px {
+  background: transparent;
+}
+
+.site-pet-sprite.is-happy {
+  animation: site-pet-bob 0.6s ease-in-out infinite, site-pet-happy 0.6s ease;
+}
+
+@keyframes site-pet-happy {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  30%      { transform: scale(1.15) rotate(-6deg); }
+  60%      { transform: scale(1.1) rotate(6deg); }
+}
+
+.site-pet-sprite.is-party {
+  animation: site-pet-bob 0.3s ease-in-out infinite, site-pet-spin 1.6s linear infinite;
+}
+
+@keyframes site-pet-spin {
+  to { transform: rotate(360deg); }
+}
+
+.site-pet-bubble {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: 10px;
+  width: max-content;
+  max-width: 160px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--global-bg-color, #fff);
+  color: var(--global-text-color, #333);
+  border: 1px solid var(--global-border-color, #ddd);
+  font-size: 12px;
+  line-height: 1.3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.site-pet-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border: 6px solid transparent;
+  border-top-color: var(--global-bg-color, #fff);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-pet-walker,
+  .site-pet-sprite,
+  .site-pet-sprite.is-happy,
+  .site-pet-sprite.is-party,
+  .site-pet-zzz {
+    animation: none;
+  }
+}
+
+@media (max-width: 420px) {
+  #site-pet {
+    right: 10px;
+    bottom: 10px;
+    transform: scale(0.85);
+    transform-origin: bottom right;
   }
 }
 
