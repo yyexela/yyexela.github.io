@@ -1,152 +1,254 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Alexey Yermakov",
+    "email": "alexey-yermakov@proton.me",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://yyexela.github.io",
+    "summary": "PhD student in Electrical & Computer Engineering at the University of Washington, advised by Dr. J. Nathan Kutz.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "address": "185 Stevens Way",
+      "postalCode": "98195",
+      "city": "Seattle",
       "countryCode": "US",
-      "region": ""
+      "region": "WA"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=Vnr80_YAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0009-8190-4258"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "yyexela",
+        "url": "https://github.com/yyexela"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "yyexela",
+        "url": "https://www.linkedin.com/in/yyexela/"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "AI2",
+      "position": "Research Intern, Climate Modeling",
+      "startDate": "2026-06",
+      "endDate": "",
+      "summary": "On the Climate Modeling team at AI2, working on the ACE family of models.",
+      "highlights": []
+    },
+    {
+      "company": "NASA/Caltech Jet Propulsion Laboratory",
+      "position": "Software Engineering Intern",
+      "startDate": "2023-06",
+      "endDate": "2023-09",
+      "summary": "Spearheaded the development of a VxWorks 7 operating system abstraction layer (OSAL) in C for the Mars Sample Return (MSR) mission.",
+      "highlights": [
+        "Ported the open-source bsdiff and bspatch software to VxWorks 7 to reduce bandwidth usage during the MSR mission"
+      ]
+    },
+    {
+      "company": "Lockheed Martin",
+      "position": "Software Engineering Intern",
+      "startDate": "2022-06",
+      "endDate": "2022-09",
+      "summary": "Implemented low-level software to communicate between a star tracker (ST) and a command & data handling (C&DH) board using the MIL-STD-1553 protocol.",
+      "highlights": [
+        "Implemented functional verification tests (FVTs) to ensure written code was following logical requirements"
+      ]
+    },
+    {
+      "company": "Lockheed Martin",
+      "position": "Software Engineering Intern",
+      "startDate": "2021-06",
+      "endDate": "2021-09",
+      "summary": "Implemented functional requirements for flight software built on top of NASA's Core Flight Executive (cFE) framework in the VxWorks operating system.",
+      "highlights": [
+        "Wrote low-level code for satellite to ground radio communication for a technology demonstration which required testing code on real hardware"
+      ]
+    },
+    {
+      "company": "Workiva",
+      "position": "Software Engineering Intern",
+      "startDate": "2020-06",
+      "endDate": "2020-09",
+      "summary": "Developed new visual and functional features for an internal search engine.",
+      "highlights": [
+        "Added pagination capabilities and the TF-IDF statistic for page ranking",
+        "Prevented Cross Site Scripting (XSS) attacks and enhanced visual appeal of the site"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "University of Washington - Seattle",
+      "area": "PhD, Electrical & Computer Engineering",
+      "studyType": "PhD",
+      "startDate": "2023-09",
+      "endDate": "Present",
+      "gpa": "3.98/4.00",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
+      "institution": "University of Washington - Seattle",
+      "area": "MS, Applied Mathematics",
+      "studyType": "MS",
+      "startDate": "2023-09",
+      "endDate": "2025-06",
+      "gpa": "3.98/4.00",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "University of Colorado - Boulder",
+      "area": "BS, Applied Mathematics",
+      "studyType": "BS",
+      "startDate": "2019-08",
+      "endDate": "2023-05",
+      "gpa": "4.00/4.00",
+      "courses": []
+    },
+    {
+      "institution": "University of Colorado - Boulder",
+      "area": "BS, Computer Science",
+      "studyType": "BS",
+      "startDate": "2019-08",
+      "endDate": "2023-05",
+      "gpa": "4.00/4.00",
       "courses": []
     }
   ],
   "skills": [],
   "languages": [],
   "interests": [],
-  "references": [],
+  "references": [
+    {
+      "name": "J. Nathan Kutz, Professor",
+      "reference": "Applied Mathematics and Electrical & Computer Engineering, University of Washington. kutz@uw.edu"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Learning the Koopman Operator using Attention Free Transformers",
+      "publisher": "IFAC World Congress",
+      "releaseDate": "2026-06-22",
+      "website": "https://yyexela.github.io/publication/2026-07-01-koopman-attention-free-transformers",
+      "summary": "Nagdi, Nikolados, Yermakov, Gao, Kutz, Menolascina (2026)."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "CTF4Nuclear: Common Task Framework for Nuclear Fission and Fusion Models",
+      "publisher": "arXiv:2605.15549",
+      "releaseDate": "2026-05-15",
+      "website": "https://yyexela.github.io/publication/2026-05-25-ctf4nuclear-common-task-framework",
+      "summary": "Riva, Introini, Cammi, Price, Yermakov, et al. (2026)."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "The Seismic Wavefield Common Task Framework",
+      "publisher": "ICLR",
+      "releaseDate": "2026-04-25",
+      "website": "https://yyexela.github.io/publication/2026-04-25-seismic-wavefield-common-task-framework",
+      "summary": "Yermakov, Zhao, Denolle, et al. (2026)."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "T-SHRED: Symbolic Regression for Regularization and Model Discovery with Transformer Shallow Recurrent Decoders",
+      "publisher": "Philosophical Transactions of the Royal Society A",
+      "releaseDate": "2026-04-09",
+      "website": "https://yyexela.github.io/publication/2026-04-09-t-shred",
+      "summary": "Yermakov, Zoro, Gao, Kutz (2026)."
+    },
+    {
+      "name": "Common Task Framework For a Critical Evaluation of Scientific Machine Learning Algorithms",
+      "publisher": "NeurIPS",
+      "releaseDate": "2025-12-01",
+      "website": "https://yyexela.github.io/publication/2025-12-01-common-task-framework-neurips",
+      "summary": "Wyder, Goldfeder, Yermakov, et al. (2025)."
+    },
+    {
+      "name": "Latent Nonlinear Wave Dynamics in Image Datasets and Autoencoder Reconstructions",
+      "publisher": "ML and the Physical Sciences Workshop, NeurIPS",
+      "releaseDate": "2025-12-02",
+      "website": "https://yyexela.github.io/publication/2025-12-02-latent-nonlinear-wave-dynamics",
+      "summary": "Yermakov, Ratliff, Kutz (2025)."
+    },
+    {
+      "name": "Common Task Framework For a Critical Evaluation of Scientific Machine Learning Algorithms",
+      "publisher": "Championing Open-source DEvelopment in ML Workshop, ICML",
+      "releaseDate": "2025-06-09",
+      "website": "https://yyexela.github.io/publication/2025-06-09-common-task-framework-icml-workshop",
+      "summary": "Wyder, Goldfeder, Yermakov, et al. (2025)."
+    },
+    {
+      "name": "A Transformer-Based Deep Learning Approach to Anomaly Detection of High-Bandwidth Multivariate Time-Series Satellite Communications",
+      "publisher": "International Conference on Space Operations",
+      "releaseDate": "2025-05-01",
+      "website": "https://yyexela.github.io/publication/2025-08-30-anomaly-detection-icso",
+      "summary": "Yermakov, Yun, Ratliff, Kutz (2025)."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
+      "name": "The Seismic Wavefield Common Task Framework (Poster)",
+      "event": "ICLR",
+      "date": "2026-04-01",
+      "location": "USA",
       "description": ""
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
+      "name": "Common Task Framework For a Critical Evaluation of Scientific Machine Learning Algorithms (Poster)",
+      "event": "NeurIPS",
+      "date": "2025-12-01",
+      "location": "USA",
       "description": ""
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
+      "name": "Latent Nonlinear Wave Dynamics in Image Datasets and Autoencoder Reconstructions (Poster)",
+      "event": "ML and the Physical Sciences Workshop, NeurIPS",
+      "date": "2025-12-02",
+      "location": "USA",
       "description": ""
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
+      "name": "Common Task Framework for a Critical Evaluation of Scientific Machine Learning Algorithms (Poster)",
+      "event": "CODEML@ICML25",
+      "date": "2025-07-01",
+      "location": "USA",
       "description": ""
+    },
+    {
+      "name": "A Transformer-Based Deep Learning Approach to Anomaly Detection of High-Bandwidth Multivariate Time-Series Satellite Communications",
+      "event": "SpaceOps25",
+      "date": "2025-05-01",
+      "location": "USA",
+      "description": "Talk"
+    },
+    {
+      "name": "Transformer-Based Anomaly Detection for DSN Time Series",
+      "event": "D34 Technologist Seminar, JPL",
+      "date": "2025-06-01",
+      "location": "Pasadena, CA, USA",
+      "description": "Talk"
+    },
+    {
+      "name": "Imaging Three-Dimensional Surface Waves Using a Synthetic Schlieren Method (Poster)",
+      "event": "Discovery Learning Apprenticeship Symposium",
+      "date": "2022-04-01",
+      "location": "Boulder, CO, USA",
+      "description": ""
+    },
+    {
+      "name": "Imaging Three-Dimensional Surface Waves Using a Synthetic Schlieren Method",
+      "event": "SIAM-FRAMSC",
+      "date": "2022-03-01",
+      "location": "USA",
+      "description": "Talk"
     }
   ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "teaching": [],
+  "portfolio": []
 }

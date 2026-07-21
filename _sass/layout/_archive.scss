@@ -27,6 +27,18 @@
   }
 }
 
+.page__title:has(+ .cv-download-links) {
+  display: inline-block;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.cv-download-links {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
@@ -81,6 +93,10 @@
 
   .archive__item-title {
     text-decoration: underline;
+  }
+
+  .archive__item-title--static {
+    text-decoration: none;
   }
 }
 
