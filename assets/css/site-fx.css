@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Site flourishes: ambient background drift + easter eggs
+   ========================================================================== */
+
+html {
+  background-color: var(--global-bg-color);
+}
+
+body {
+  background-color: transparent !important;
+}
+
+/* nav bar transparent so the gradient shows through it too
+   (dropdown/overflow menu stays opaque so it's still readable when open) */
+.masthead,
+.masthead__menu-item,
+.greedy-nav,
+.greedy-nav button {
+  background: transparent !important;
+}
+
+/* ---------- ambient gradient drift ---------- */
+
+#bg-drift {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#bg-drift span {
+  position: absolute;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  will-change: transform;
+}
+
+#bg-drift span:nth-child(1) {
+  top: -20vmax;
+  left: -15vmax;
+  background: radial-gradient(circle, #6fd6c9, transparent 70%);
+  animation: bg-drift-a 50s ease-in-out infinite alternate;
+}
+
+#bg-drift span:nth-child(2) {
+  bottom: -25vmax;
+  right: -20vmax;
+  background: radial-gradient(circle, #f3a6c6, transparent 70%);
+  animation: bg-drift-b 58s ease-in-out infinite alternate;
+}
+
+#bg-drift span:nth-child(3) {
+  top: 20vh;
+  left: 40vw;
+  background: radial-gradient(circle, #b8a6f0, transparent 70%);
+  animation: bg-drift-c 66s ease-in-out infinite alternate;
+}
+
+@keyframes bg-drift-a {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(14vw, 12vh) scale(1.15); }
+}
+
+@keyframes bg-drift-b {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-12vw, -14vh) scale(1.12); }
+}
+
+@keyframes bg-drift-c {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-10vw, 10vh) scale(1.2); }
+}
+
+html[data-theme="dark"] #bg-drift span {
+  opacity: 0.26;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bg-drift span {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #bg-drift {
+    display: none;
+  }
+}
+
+/* ---------- confetti (konami easter egg) ---------- */
+
+.site-confetti-piece {
+  position: fixed;
+  top: -20px;
+  width: 8px;
+  height: 14px;
+  z-index: 9999;
+  pointer-events: none;
+  animation-name: site-confetti-fall;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes site-confetti-fall {
+  to { transform: translateY(105vh) rotate(360deg); opacity: 0.9; }
+}
