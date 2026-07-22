@@ -172,9 +172,21 @@ $(document).ready(function () {
   bumpIt();
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function () {
+  $(".author__urls-wrapper button").on("click", function (event) {
+    event.stopPropagation();
     $(".author__urls").fadeToggle("fast", function () { });
     $(".author__urls-wrapper button").toggleClass("open");
+  });
+
+  // Close the follow menu when clicking anywhere else on the page
+  $(document).on("click", function (event) {
+    if (
+      $(".author__urls-wrapper button").hasClass("open") &&
+      !$(event.target).closest(".author__urls-wrapper").length
+    ) {
+      $(".author__urls").fadeOut("fast");
+      $(".author__urls-wrapper button").removeClass("open");
+    }
   });
 
   // Restore the follow menu if toggled on a window resize

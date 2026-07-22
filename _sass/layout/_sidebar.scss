@@ -237,10 +237,39 @@
   }
 
   button {
+    position: relative;
     margin-bottom: 0;
 
     @include breakpoint($large) {
       display: none;
+    }
+
+    &.open {
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: calc(50% - 10px);
+        width: 0;
+        border-style: solid;
+        border-width: 10px 10px 0;
+        border-color: var(--global-border-color) transparent;
+        z-index: 10;
+      }
+
+      &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 10px);
+        width: 0;
+        border-style: solid;
+        border-width: 10px 10px 0;
+        border-color: var(--global-bg-color) transparent;
+        z-index: 11;
+      }
     }
   }
 }
@@ -267,40 +296,6 @@
     border: 0;
     background: transparent;
     box-shadow: none;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: var(--global-border-color) transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
   }
 
   li {
