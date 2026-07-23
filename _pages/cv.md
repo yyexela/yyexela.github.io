@@ -30,7 +30,7 @@ Education
   * Summa Cum Laude with Honors
   * GPA: 4.00/4.00
 
-Employment
+Internships
 ======
 * Allen Institute for Artificial Intelligence (Ai2) (Summer 2026)
   * I worked on the Climate Modeling team at Ai2 as a research intern working on out-of-distribution generalization
