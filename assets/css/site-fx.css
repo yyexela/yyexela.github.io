@@ -19,6 +19,12 @@ body {
   background: transparent !important;
 }
 
+/* blur whatever scrolls underneath the fixed nav bar so nav text stays readable */
+.masthead {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /* ---------- ambient gradient drift ---------- */
 
 #bg-drift {
