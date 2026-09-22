@@ -13,7 +13,6 @@
   } catch (e) {}
 
   /* ---------------- walking pixel pet (Mametchi) ---------------- */
-  var PET_NAME = 'Mametchi';
   var grid = document.getElementById('site-pet-grid');
   var petBtn = document.getElementById('site-pet-btn');
   var walker = document.querySelector('.site-pet-walker');
@@ -123,17 +122,6 @@
       } catch (e) {}
       showBubble(MESSAGES[Math.floor(Math.random() * MESSAGES.length)]);
     });
-
-    try {
-      var last = localStorage.getItem('site-pet-last-visit');
-      var now = Date.now();
-      localStorage.setItem('site-pet-last-visit', String(now));
-      if (last && now - Number(last) > 1000 * 60 * 60 * 12) {
-        setTimeout(function () { showBubble(PET_NAME + ' missed you!'); }, 1200);
-      } else if (!last) {
-        setTimeout(function () { showBubble('hi, I’m ' + PET_NAME + '!'); }, 1200);
-      }
-    } catch (e) {}
   }
 
   /* ---------------- konami code easter egg ---------------- */
