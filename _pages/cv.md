@@ -32,15 +32,15 @@ Education
 
 Employment
 ======
-* Allen Institute for Artificial Intelligence (Ai2), Student Researcher, Climate Modeling (August 2026 – Present)
-  * I continue to work part-time on the Climate Modeling team on out-of-distribution generalization for the ACE family of climate emulators
+* Allen Institute for Artificial Intelligence (Ai2), PhD Student Researcher, Climate Modeling (Fall 2026)
+  * I continue my internship work part-time on the Climate Modeling team on out-of-distribution generalization for the ACE family of climate emulators
 
 * Allen Institute for Artificial Intelligence (Ai2), Research Intern, Climate Modeling (Summer 2026)
-  * I worked on the Climate Modeling team at Ai2 as a research intern working on out-of-distribution generalization
+  * I worked on the Climate Modeling team at Ai2 as a research intern on out-of-distribution generalization
   * I improved long-time climate forecasting performance through a variable masking strategy
   * I also explored new transformer backbones and obtained the first positive results on an ACE foundation model trained with a mix of real and synthetic data
 
-* NASA/Caltech Jet Propulsion Laboratory, Software Engineering Intern (Summer 2023)
+* NASA/Caltech Jet Propulsion Laboratory, Engineering Grad Student (Summer 2023)
   * I spearheaded the development of a VxWorks 7 operating system abstraction layer (OSAL) in C for the Mars Sample Return (MSR) mission
   * I also ported the open-source bsdiff and bspatch software to VxWorks 7 to reduce bandwidth usage during the MSR mission
 
@@ -78,7 +78,7 @@ Awards and Fellowships
 * JPL Mission System Capture the Flag Award – Third Place (Summer 2023) — Recognition award for JPL interns
 * CEAS Research Award (Spring 2023) — Recognition award for outstanding commitment to undergraduate researchers at CU Boulder
 
-Service and leadership
+Service
 ======
 * AI-DEEDS Organizer and Reviewer (2026)
 * Elementary School Volunteer for UW Science Explorers (2026)
