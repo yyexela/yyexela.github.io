@@ -187,46 +187,104 @@ def parse_education(education_text):
     
     return education_entries
 
+MONTHS = {
+    'january': '01', 'february': '02', 'march': '03', 'april': '04',
+    'may': '05', 'june': '06', 'july': '07', 'august': '08',
+    'september': '09', 'october': '10', 'november': '11', 'december': '12'
+}
+
+SEASONS = {
+    'winter': ('01', '03'), 'spring': ('03', '06'),
+    'summer': ('06', '09'), 'fall': ('09', '12'), 'autumn': ('09', '12')
+}
+
+def parse_month_year(text):
+    """Convert 'August 2026' or '2026' to 'YYYY-MM'; 'Present' becomes ''."""
+    text = text.strip()
+    if re.match(r'present|current|now', text, re.IGNORECASE):
+        return ""
+
+    month_year = re.match(r'([A-Za-z]+)\.?\s+(\d{4})$', text)
+    if month_year:
+        month, year = month_year.groups()
+        month_num = MONTHS.get(month.lower())
+        if month_num:
+            return f"{year}-{month_num}"
+
+    year_only = re.match(r'(\d{4})$', text)
+    if year_only:
+        return year_only.group(1)
+
+    return ""
+
+def parse_date_range(date_text):
+    """Convert a CV date label to (startDate, endDate) in YYYY-MM form.
+
+    Handles 'Summer 2023', 'August 2026 - Present' and 'Sept 2023 - June 2025'.
+    """
+    text = date_text.replace('\u2013', '-').replace('\u2014', '-').strip()
+
+    season = re.match(r'(winter|spring|summer|fall|autumn)\s+(\d{4})$', text, re.IGNORECASE)
+    if season:
+        name, year = season.groups()
+        start_month, end_month = SEASONS[name.lower()]
+        return f"{year}-{start_month}", f"{year}-{end_month}"
+
+    date_range = re.match(r'(.+?)\s+-\s+(.+)$', text)
+    if date_range:
+        return parse_month_year(date_range.group(1)), parse_month_year(date_range.group(2))
+
+    return parse_month_year(text), ""
+
+def clean_bullet(text):
+    """Turn a first-person CV bullet into the third-person style used in the JSON."""
+    text = re.sub(r'^I\s+(?:also\s+)?', '', text.strip())
+    return text[:1].upper() + text[1:] if text else text
+
 def parse_work_experience(work_text):
-    """Parse work experience section from markdown."""
+    """Parse employment section from markdown.
+
+    Expects entries of the form '* <Organization>, <Role> (<dates>)' followed by
+    indented bullets, e.g. '* Lockheed Martin, Software Engineering Intern (Summer 2022)'.
+    """
     work_entries = []
-    
+
     # Extract work entries
-    entries = re.findall(r'\* (.*?)(?=\n\*|\Z)', work_text, re.DOTALL)
-    
+    entries = re.findall(r'^\* (.*?)(?=\n\* |\Z)', work_text, re.DOTALL | re.MULTILINE)
+
     for entry in entries:
-        lines = entry.strip().split('\n')
+        lines = [line for line in entry.strip().split('\n') if line.strip()]
         if not lines:
             continue
-            
-        # Parse position and company
+
+        # Split the trailing '(dates)' off the header line
         first_line = lines[0].strip()
-        position_match = re.match(r'(.*?), (.*?)(?:, |$)', first_line)
-        
-        if position_match:
-            position, company = position_match.groups()
-            
-            # Extract dates if available
-            date_match = re.search(r'(\d{4})\s*-\s*(\d{4}|present)', entry, re.IGNORECASE)
-            start_date = date_match.group(1) if date_match else ""
-            end_date = date_match.group(2) if date_match else ""
-            
-            # Extract highlights
-            highlights = []
-            for line in lines[1:]:
-                if line.strip().startswith('*') or line.strip().startswith('-'):
-                    highlights.append(line.strip()[1:].strip())
-            
-            work_entries.append({
-                "company": company.strip(),
-                "position": position.strip(),
-                "website": "",
-                "startDate": start_date,
-                "endDate": end_date,
-                "summary": "",
-                "highlights": highlights
-            })
-    
+        date_match = re.search(r'\(([^()]*)\)\s*$', first_line)
+        if date_match:
+            start_date, end_date = parse_date_range(date_match.group(1))
+            first_line = first_line[:date_match.start()].strip().rstrip(',')
+        else:
+            start_date, end_date = "", ""
+
+        # Everything before the first comma is the organization, the rest is the role
+        company, _, position = first_line.partition(',')
+        if not position.strip():
+            continue
+
+        # The first sub-bullet becomes the summary, the rest become highlights
+        bullets = [clean_bullet(line.strip()[1:]) for line in lines[1:]
+                   if line.strip().startswith(('*', '-'))]
+
+        work_entries.append({
+            "company": company.strip(),
+            "position": position.strip(),
+            "website": "",
+            "startDate": start_date,
+            "endDate": end_date,
+            "summary": (bullets[0].rstrip('.') + '.') if bullets else "",
+            "highlights": bullets[1:]
+        })
+
     return work_entries
 
 def parse_skills(skills_text):
@@ -378,7 +436,7 @@ def create_cv_json(md_file, config_file, repo_root, output_file):
     # Create the JSON structure
     cv_json = {
         "basics": author_info,
-        "work": parse_work_experience(sections.get('Work experience', '')),
+        "work": parse_work_experience(sections.get('Employment', '')),
         "education": parse_education(sections.get('Education', '')),
         "skills": parse_skills(sections.get('Skills', '')),
         "languages": [],

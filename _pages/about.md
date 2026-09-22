@@ -15,6 +15,6 @@ Before starting my PhD, I worked as a software engineer at NASA/Caltech's Jet Pr
 
 I'm fortunate enough to be a National Science Foundation Graduate Research (NSF GRFP) Fellow.
 
-*Currently at [Ai2](https://allenai.org/blog/ai2-climate-emulator)!*
+*Currently a part-time student researcher at [Ai2](https://allenai.org/blog/ai2-climate-emulator)!*
 
 Take a look at my [publications](/publications/), [talks](/talks/), or [CV](/cv/) to learn more, or reach out at [alexey-yermakov@proton.me](mailto:alexey-yermakov@proton.me).

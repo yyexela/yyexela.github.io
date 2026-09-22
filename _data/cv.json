@@ -37,16 +37,30 @@
   },
   "work": [
     {
-      "company": "AI2",
-      "position": "Research Intern, Climate Modeling",
-      "startDate": "2026-06",
+      "company": "Allen Institute for Artificial Intelligence (Ai2)",
+      "position": "Student Researcher, Climate Modeling",
+      "website": "",
+      "startDate": "2026-08",
       "endDate": "",
-      "summary": "On the Climate Modeling team at AI2, working on the ACE family of models.",
+      "summary": "Continue to work part-time on the Climate Modeling team on out-of-distribution generalization for the ACE family of climate emulators.",
       "highlights": []
+    },
+    {
+      "company": "Allen Institute for Artificial Intelligence (Ai2)",
+      "position": "Research Intern, Climate Modeling",
+      "website": "",
+      "startDate": "2026-06",
+      "endDate": "2026-08",
+      "summary": "Worked on the Climate Modeling team at Ai2 as a research intern working on out-of-distribution generalization.",
+      "highlights": [
+        "Improved long-time climate forecasting performance through a variable masking strategy",
+        "Explored new transformer backbones and obtained the first positive results on an ACE foundation model trained with a mix of real and synthetic data"
+      ]
     },
     {
       "company": "NASA/Caltech Jet Propulsion Laboratory",
       "position": "Software Engineering Intern",
+      "website": "",
       "startDate": "2023-06",
       "endDate": "2023-09",
       "summary": "Spearheaded the development of a VxWorks 7 operating system abstraction layer (OSAL) in C for the Mars Sample Return (MSR) mission.",
@@ -57,32 +71,34 @@
     {
       "company": "Lockheed Martin",
       "position": "Software Engineering Intern",
+      "website": "",
       "startDate": "2022-06",
       "endDate": "2022-09",
       "summary": "Implemented low-level software to communicate between a star tracker (ST) and a command & data handling (C&DH) board using the MIL-STD-1553 protocol.",
       "highlights": [
-        "Implemented functional verification tests (FVTs) to ensure written code was following logical requirements"
+        "Worked on implementing functional verification tests (FVTs) to ensure written code followed logical requirements"
       ]
     },
     {
       "company": "Lockheed Martin",
       "position": "Software Engineering Intern",
+      "website": "",
       "startDate": "2021-06",
       "endDate": "2021-09",
       "summary": "Implemented functional requirements for flight software built on top of NASA's Core Flight Executive (cFE) framework in the VxWorks operating system.",
       "highlights": [
-        "Wrote low-level code for satellite to ground radio communication for a technology demonstration which required testing code on real hardware"
+        "Wrote low-level code for satellite-to-ground radio communication for a technology demonstration that required testing code on real hardware"
       ]
     },
     {
       "company": "Workiva",
       "position": "Software Engineering Intern",
+      "website": "",
       "startDate": "2020-06",
       "endDate": "2020-09",
       "summary": "Developed new visual and functional features for an internal search engine.",
       "highlights": [
-        "Added pagination capabilities and the TF-IDF statistic for page ranking",
-        "Prevented Cross Site Scripting (XSS) attacks and enhanced visual appeal of the site"
+        "Added pagination capabilities and the TF-IDF statistic for page ranking, prevented Cross-Site Scripting (XSS) attacks, and enhanced the visual appeal of the site"
       ]
     }
   ],

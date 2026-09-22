@@ -97,15 +97,15 @@
   {% endif %}
   
   {% if cv.work.size > 0 %}
-  <!-- Internships -->
+  <!-- Employment -->
   <div class="cv-section">
-    <h2>Internships</h2>
+    <h2>Employment</h2>
     <ul class="cv-list">
       {% for work in cv.work %}
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ work.position }}</div>
-          <div class="cv-item-date">{{ work.startDate }}{% if work.endDate %} - {{ work.endDate }}{% endif %}</div>
+          <div class="cv-item-date">{{ work.startDate }} - {% if work.endDate != blank %}{{ work.endDate }}{% else %}Present{% endif %}</div>
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
