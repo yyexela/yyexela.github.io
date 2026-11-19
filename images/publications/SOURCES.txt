@@ -1,0 +1,19 @@
+Actual publication figures, rendered from the authors' primary-source PDFs and cropped to the figure bounds. No generated or decorative replacement imagery.
+
+variable-masking-ace.png
+Variable Masking for Climate Emulation in ACE. Figure 1 (annual-mean air temperature comparison), PDF page 4.
+https://arxiv.org/pdf/2610.21012
+
+t-shred.png
+T-SHRED: Symbolic Regression for Regularization and Model Discovery with Transformer Shallow Recurrent Decoders. Figure 1 (SHRED and SINDy-attention architecture), PDF page 3, arXiv version 3.
+https://arxiv.org/pdf/2506.15881
+
+seismic-wavefield-ctf.png
+The Seismic Wavefield Common Task Framework. Figure 1 (global, observed, and synthetic seismic wavefield datasets), PDF page 3.
+https://arxiv.org/pdf/2512.19927
+
+common-task-framework.png
+Common Task Framework For a Critical Evaluation of Scientific Machine Learning Algorithms. Figure 1 (performance radar plots), PDF page 3, NeurIPS 2025 Datasets and Benchmarks Track.
+https://proceedings.neurips.cc/paper_files/paper/2025/file/f908bc294862a555413fbe43ff08933f-Paper-Datasets_and_Benchmarks_Track.pdf
+
+Retrieved 2026-11-18. Figure ownership and licensing remain with the respective paper authors/publishers.

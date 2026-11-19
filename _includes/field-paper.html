@@ -1,0 +1,10 @@
+{% assign paper = include.paper %}
+<article class="publication{% unless include.image %} publication-compact{% endunless %}">
+  {% if include.image %}<a class="publication-image" href="{{ paper.paperurl }}"><img src="{{ include.image | relative_url }}" alt="{{ include.image_alt | escape }}" width="220" height="155" loading="lazy"></a>{% endif %}
+  <div class="publication-body">
+    <h3><a href="{{ paper.paperurl }}">{{ paper.title }}</a></h3>
+    <p class="authors">{{ paper.citation | split: '. (' | first | append: '.' | replace: 'Yermakov, A.', '<strong>Yermakov, A.</strong>' }}</p>
+    <p class="venue">{{ paper.venue }} <span>· {{ paper.date | date: '%Y' }}</span></p>
+    <div class="paper-actions"><a href="{{ paper.paperurl }}">Paper</a><details><summary>Overview</summary><div class="detail-content">{{ paper.excerpt | markdownify }}</div></details><details><summary>Citation</summary><div class="detail-content citation">{{ paper.citation }}</div></details></div>
+  </div>
+</article>

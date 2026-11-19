@@ -1,20 +1,24 @@
 ---
 permalink: /
 title: "Alexey Yermakov"
-author_profile: true
+layout: field-theory
+description: "Alexey Yermakov — AI for science, model discovery, and learning the dynamics of the physical world. PhD candidate at the University of Washington."
+mobile_bio: |
+  I'm an ECE PhD candidate at the **University of Washington**, advised by [J. Nathan Kutz](https://faculty.washington.edu/kutz/), and an **NSF Graduate Research Fellow**.
+
+  I work on **AI for science**: symbolic regression, seismic wavefields, nonlinear waves, and science/engineering datasets. I'm also a lead developer of the [Common Task Framework for Science](https://ctf-for-science.github.io/ctf4science/) and a part-time student researcher at [Ai2](https://allenai.org/blog/ai2-climate-emulator), studying generalization in climate emulators.
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I'm an Electrical & Computer Engineering PhD candidate at the University of Washington, advised by [Dr. J. Nathan Kutz](https://faculty.washington.edu/kutz/). I hold an MS degree in Applied Mathematics from UW, and BS degrees in Applied Mathematics and Computer Science from the University of Colorado Boulder, where I graduated Summa Cum Laude with Honors.
+Hi, I'm Alexey! I'm an Electrical & Computer Engineering PhD candidate at the **University of Washington**, advised by [J. Nathan Kutz](https://faculty.washington.edu/kutz/), and an **NSF Graduate Research Fellow**.
 
-My research sits at the intersection of machine learning and the physical sciences, focusing on symbolic regression and model discovery for scientific and dynamical systems - including applications to seismic wavefields, satellite communications anomaly detection, and nonlinear wave dynamics. I'm also a lead developer of the [Common Task Framework for Science](https://ctf-for-science.github.io/ctf4science/).
+I work at the intersection of **machine learning and the physical sciences**. I'm interested in how we can learn from complex data to discover the models and dynamics underneath it. My research spans:
 
-Before starting my PhD, I worked as a software engineer at NASA/Caltech's Jet Propulsion Laboratory, Lockheed Martin, and Workiva, where I worked on flight software, satellite communications, and search infrastructure.
+- **Model discovery & dynamics:** symbolic regression, seismic wavefields, nonlinear waves, and science/engineering datasets.
+- **Reliable scientific ML:** climate emulation and shared benchmarks. I'm a lead developer of the [Common Task Framework for Science](https://ctf-for-science.github.io/ctf4science/).
 
-I'm fortunate enough to be a National Science Foundation Graduate Research (NSF GRFP) Fellow.
+Currently, I'm a part-time student researcher on the Climate Modeling team at [Ai2](https://allenai.org/blog/ai2-climate-emulator), working on generalization in climate emulators.
 
-*Currently a part-time student researcher at [Ai2](https://allenai.org/blog/ai2-climate-emulator)!*
-
-Take a look at my [publications](/publications/), [talks](/talks/), or [CV](/cv/) to learn more, or reach out at [alexey-yermakov@proton.me](mailto:alexey-yermakov@proton.me).
+Previously, I worked on flight software, satellite communications, and search infrastructure at **NASA/Caltech JPL**, **Lockheed Martin**, and **Workiva**.

@@ -1,0 +1,51 @@
+selected_publications:
+  - title: Variable Masking for Climate Emulation in ACE
+    image: /images/publications/variable-masking-ace.png
+    image_alt: Annual-mean near-surface air temperature comparison from the ACE variable masking paper
+  - title: "T-SHRED: Symbolic Regression for Regularization and Model Discovery with Transformer Shallow Recurrent Decoders"
+    image: /images/publications/t-shred.png
+    image_alt: SHRED and SINDy-attention transformer architecture from the T-SHRED paper
+  - title: The Seismic Wavefield Common Task Framework
+    image: /images/publications/seismic-wavefield-ctf.png
+    image_alt: Global, observed, and synthetic seismic wavefield datasets
+  - title: Common Task Framework For a Critical Evaluation of Scientific Machine Learning Algorithms
+    category: conferences
+    image: /images/publications/common-task-framework.png
+    image_alt: Lorenz and Kuramoto–Sivashinsky benchmark comparisons across twelve metrics
+news:
+  - date: Oct 2026
+    text: 'Our preprint on <a href="https://arxiv.org/abs/2610.21012">variable masking for climate emulation in ACE</a> is available.'
+  - date: Fall 2026
+    text: 'Continuing my climate modeling work at <a href="https://allenai.org/">Ai2</a> as a part-time PhD student researcher.'
+  - date: Jun 2026
+    text: 'Presented the Common Task Framework for Scientific Machine Learning at AI-DEEDS in Banff.'
+  - date: Apr 2026
+    text: '<a href="https://doi.org/10.1098/rsta.2024.0586">T-SHRED</a> appeared in Philosophical Transactions of the Royal Society A.'
+  - date: Dec 2025
+    text: 'Shared our work on scientific ML benchmarks and latent nonlinear wave dynamics at NeurIPS.'
+  - date: Jun 2025
+    text: 'Awarded the <strong>NSF Graduate Research Fellowship</strong>.'
+  - date: May 2025
+    text: 'Received the Most Innovative Poster Award at the UW ECE Research Showcase.'
+
+experience:
+  - organization: Allen Institute for AI
+    logo: /images/organizations/ai2.svg
+    role: PhD Student Researcher · Research Intern
+    date: Summer 2026 – Present
+    description: Climate modeling, out-of-distribution generalization, and the ACE family of climate emulators.
+  - organization: NASA / Caltech Jet Propulsion Laboratory
+    logo: /images/organizations/jpl.svg
+    role: Engineering Graduate Student
+    date: Summer 2023
+    description: Flight software and a VxWorks operating system abstraction layer for the Mars Sample Return mission.
+  - organization: Lockheed Martin
+    logo: /images/organizations/lockheed-martin.svg
+    role: Software Engineering Intern
+    date: Summers 2021 & 2022
+    description: Flight software, satellite-to-ground communications, and hardware verification.
+  - organization: Workiva
+    logo: /images/organizations/workiva.svg
+    role: Software Engineering Intern
+    date: Summer 2020
+    description: Search infrastructure, ranking, and internal developer tools.

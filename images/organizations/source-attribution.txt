@@ -1,0 +1,29 @@
+Organization assets obtained from official public websites on 2026-11-18.
+
+ai2.svg
+Source: https://allenai.org/
+Exact inline SVG symbol id="ai2-logo-svg" extracted as a standalone SVG. Fill taken from official homepage CSS tokens: accent.primary -> elements.primary.fill -> pink.100 -> rgba(240,82,156,1).
+
+jpl.svg
+Source: https://www.jpl.nasa.gov/_nuxt/logo-tribrand-color.CrK_FdfP.svg
+Official NASA/JPL/Caltech tri-brand logo. Full color; best on a light background.
+Policy: https://www.jpl.nasa.gov/jpl-image-use-policy/ states prior written approval is required for JPL logo and NASA insignia use, including web pages. Download does not grant permission.
+
+lockheed-martin.svg
+Source: https://www.lockheedmartin.com/content/dam/lockheed-martin/general/lm-logo.svg
+Official blue wordmark; best on a light background.
+
+workiva.svg
+Source: https://newsroom.workiva.com/sites/default/files/2023-10/Workiva_Logo-Digital-Steel.svg
+Media kit: https://newsroom.workiva.com/media-kit
+Official Steel wordmark (#333333); best on a light background.
+
+university-of-washington.svg
+Source: https://uw.edu/static/hometemp/wp-content/themes/uw_wp_theme/assets/svg/w.svg
+Official white block W; requires a colored/dark background (UW purple #4b2e83 is suitable).
+
+university-of-colorado-boulder.svg
+Source: https://cdn.colorado.edu/static/brand-assets/live/images/cu-boulder-logo-text-black.svg
+Standalone interlocking CU mark extracted from the official horizontal SVG: retained the four original mark polygons/polylines and original color styles, removed the separate wordmark paths, and tightened viewBox to 0 0 82.49 79.64. No mark geometry or colors changed. Best on a light background.
+
+All organization marks remain property of their respective owners. Files preserve official geometry and are included for descriptive organizational identification; no trademark rights are transferred.
